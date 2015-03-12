@@ -2,7 +2,7 @@
 galaxy_info:
   author: Matthew Hager
   company: Poetic Systems
-  description: Short Stack role that installs node and iojs via nvm.
+  description: Installs node and iojs via nvm.
   license: MIT
   min_ansible_version: 1.8
   platforms:

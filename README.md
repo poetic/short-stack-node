@@ -1,6 +1,7 @@
 Short Stack: Node
 =========
 [![Build Status](https://travis-ci.org/poetic/short-stack-node.svg)](https://travis-ci.org/poetic/short-stack-node)
+
 Installs node and iojs via nvm.
 
 Requirements
