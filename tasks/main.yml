@@ -13,3 +13,10 @@
     - iojs
   register: nvm_install_result
   changed_when: "'already installed' not in nvm_install_result.stderr"
+
+- name: ensure configuration is added to stack.d
+  copy: src={{ item }} dest={{ stack_d }}
+  with_items:
+    - node.bundle
+    - node.vimrc.before
+  notify: vim bundle install
