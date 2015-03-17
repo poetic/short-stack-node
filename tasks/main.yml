@@ -1,7 +1,6 @@
 ---
 - name: ensure zsh configuration is added to stack.d
   copy: src=node.zsh dest={{ stack_d }}
-  when: "'zsh' in role_names"
 
 - name: ensure nvm is installed/updated to HEAD
   homebrew: name=nvm state=head
