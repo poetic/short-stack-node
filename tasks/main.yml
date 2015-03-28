@@ -1,7 +1,4 @@
 ---
-- name: ensure zsh configuration is added to stack.d
-  copy: src=node.zsh dest={{ stack_d }}
-
 - name: ensure nvm is installed/updated to HEAD
   homebrew: name=nvm state=head
 
@@ -18,4 +15,5 @@
   with_items:
     - node.bundle
     - node.vimrc.before
+    - node.zsh
   notify: vim bundle install
